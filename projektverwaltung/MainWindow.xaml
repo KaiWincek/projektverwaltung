@@ -3,7 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
-        
+        <Button Content="Projekt Verwalten" HorizontalAlignment="Left" Margin="30,58,0,0" VerticalAlignment="Top" Width="200" Height="200" FontSize="20" FontWeight="Bold"/>
+        <Button Content="Mitarnbeiter/-innen" HorizontalAlignment="Left" Margin="285,58,0,0" VerticalAlignment="Top" Width="200" Height="200" FontWeight="Bold" FontSize="20"/>
+
+
     </Grid>
 </Window>
