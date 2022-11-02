@@ -1,0 +1,30 @@
+﻿<Window x:Class="projektverwaltung.Projektverwaltung"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Projektverwaltung" Height="500" Width="650">
+    <Grid>
+        <TreeView HorizontalAlignment="Left" Height="370" Margin="10,10,0,0" VerticalAlignment="Top" Width="300"/>
+        <Button Content="Neue Projektmappe" HorizontalAlignment="Left" Margin="10,385,0,0" VerticalAlignment="Top" Width="143" Height="30" Click="Button_Click"/>
+        <Button Content="Neues Projekt" HorizontalAlignment="Left" Margin="168,385,0,0" VerticalAlignment="Top" Width="143" Height="30"/>
+        <Button Content="Löschen" HorizontalAlignment="Left" Margin="89,429,0,0" VerticalAlignment="Top" Width="143" Height="30"/>
+        <Label Content="Titel" HorizontalAlignment="Left" Margin="315,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Startdatum" HorizontalAlignment="Left" Margin="315,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="Enddatum" HorizontalAlignment="Left" Margin="315,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Priorität" HorizontalAlignment="Left" Margin="315,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Projektbeteiligte" HorizontalAlignment="Left" Margin="315,134,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ressourcen" HorizontalAlignment="Left" Margin="315,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Beschreibung" HorizontalAlignment="Left" Margin="315,196,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="427,13,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="205"/>
+        <DatePicker HorizontalAlignment="Left" Margin="427,43,0,0" VerticalAlignment="Top" Width="205"/>
+        <DatePicker HorizontalAlignment="Left" Margin="427,74,0,0" VerticalAlignment="Top" Width="205"/>
+        <ComboBox HorizontalAlignment="Left" Margin="427,107,0,0" VerticalAlignment="Top" Width="40">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+
+    </Grid>
+</Window>

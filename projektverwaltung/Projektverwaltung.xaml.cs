@@ -10,32 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace projektverwaltung
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Projektverwaltung.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Projektverwaltung : Window
     {
-        public MainWindow()
+        public Projektverwaltung()
         {
             InitializeComponent();
-            Console.WriteLine("yo");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Projektverwaltung projektverwaltungWindow = new Projektverwaltung();
-            projektverwaltungWindow.Show();
-        }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Mitarbeiter mitarbeiterWindow = new Mitarbeiter();
-            mitarbeiterWindow.Show();
         }
     }
 }
