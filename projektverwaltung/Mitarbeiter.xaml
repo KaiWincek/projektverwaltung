@@ -1,8 +1,13 @@
-﻿<Window x:Class="projektverwaltung.Mitarbeiter"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Mitarbeiter" Height="309" Width="715">
-    <Grid>
+        xmlns:local="clr-namespace:projektverwaltung" x:Class="projektverwaltung.Mitarbeiter"
+        Title="Mitarbeiter" Height="309" Width="715" Loaded="Window_Loaded">
+    <Window.Resources>
+        <local:AnnaKaiDataSet x:Key="annaKaiDataSet"/>
+        <CollectionViewSource x:Key="mitarbeiterViewSource" Source="{Binding Mitarbeiter, Source={StaticResource annaKaiDataSet}}"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource mitarbeiterViewSource}">
         <Label Content="Nachname" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="262,13,0,0"/>
         <Label Content="Vorname" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="262,62,0,0"/>
         <Label Content="Adresse" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="262,116,0,0"/>
@@ -15,14 +20,7 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="569,17,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="569,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="569,114,0,0" VerticalAlignment="Top" Width="120"/>
-        <ListView HorizontalAlignment="Left" Height="249" Margin="10,10,0,0" VerticalAlignment="Top" Width="224">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-            <ListBoxItem Content="Mitarbeiterübersicht"/>
-        </ListView>
+        <DataGrid HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="258" Width="247" ItemsSource="{Binding}"/>
 
     </Grid>
 </Window>

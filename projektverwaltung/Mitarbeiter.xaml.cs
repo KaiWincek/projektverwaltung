@@ -23,5 +23,16 @@ namespace projektverwaltung
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            projektverwaltung.AnnaKaiDataSet annaKaiDataSet = ((projektverwaltung.AnnaKaiDataSet)(this.FindResource("annaKaiDataSet")));
+            // Load data into the table Mitarbeiter. You can modify this code as needed.
+            projektverwaltung.AnnaKaiDataSetTableAdapters.MitarbeiterTableAdapter annaKaiDataSetMitarbeiterTableAdapter = new projektverwaltung.AnnaKaiDataSetTableAdapters.MitarbeiterTableAdapter();
+            annaKaiDataSetMitarbeiterTableAdapter.Fill(annaKaiDataSet.Mitarbeiter);
+            System.Windows.Data.CollectionViewSource mitarbeiterViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("mitarbeiterViewSource")));
+            mitarbeiterViewSource.View.MoveCurrentToFirst();
+        }
     }
 }
