@@ -14,13 +14,14 @@
         <Label Content="Telefon" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="516,13,0,0"/>
         <Label Content="E-Mail" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="516,62,0,0"/>
         <Label Content="Bild" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="516,116,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="334,17,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="334,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="90" Margin="334,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="569,17,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="569,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nachname" HorizontalAlignment="Left" Height="23" Margin="334,17,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="vorname" HorizontalAlignment="Left" Height="23" Margin="334,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="adresse" HorizontalAlignment="Left" Height="90" Margin="334,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="telefon" HorizontalAlignment="Left" Height="23" Margin="569,17,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" Margin="569,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="569,114,0,0" VerticalAlignment="Top" Width="120"/>
         <DataGrid HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="258" Width="247" ItemsSource="{Binding}"/>
+		<Button Content="Speichern" HorizontalAlignment="Left" Margin="614,248,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
 
-    </Grid>
+	</Grid>
 </Window>
