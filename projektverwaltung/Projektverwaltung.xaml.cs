@@ -24,9 +24,9 @@ namespace projektverwaltung
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void newFolder_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }

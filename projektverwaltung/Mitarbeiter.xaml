@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:projektverwaltung" x:Class="projektverwaltung.Mitarbeiter"
-        Title="Mitarbeiter" Height="309" Width="715" Loaded="Window_Loaded">
+        Title="Mitarbeiter" Height="314.975" Width="719.268" Loaded="Window_Loaded">
     <Window.Resources>
         <local:AnnaKaiDataSet x:Key="annaKaiDataSet"/>
         <CollectionViewSource x:Key="mitarbeiterViewSource" Source="{Binding Mitarbeiter, Source={StaticResource annaKaiDataSet}}"/>
@@ -20,8 +20,9 @@
         <TextBox x:Name="telefon" HorizontalAlignment="Left" Height="23" Margin="569,17,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" Margin="569,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="569,114,0,0" VerticalAlignment="Top" Width="120"/>
-        <DataGrid HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="258" Width="247" ItemsSource="{Binding}"/>
-		<Button Content="Speichern" HorizontalAlignment="Left" Margin="614,248,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-
-	</Grid>
+        <DataGrid x:Name="grid" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="258" Width="247" ItemsSource="{Binding}" CanUserReorderColumns="False" CanUserResizeColumns="False" SelectionChanged="grid_SelectionChanged" EnableColumnVirtualization="True" IsReadOnly="True"/>
+        <Button x:Name="add" Content="Hinzufügen" HorizontalAlignment="Left" Margin="614,248,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="delete" Content="Löschen" HorizontalAlignment="Left" Margin="262,248,0,0" VerticalAlignment="Top" Width="75" Click="delete_Click" IsEnabled="False"/>
+        <Button x:Name="update" Content="Update" HorizontalAlignment="Left" Margin="437,248,0,0" VerticalAlignment="Top" Width="75" Click="update_Click" IsEnabled="False"/>
+    </Grid>
 </Window>

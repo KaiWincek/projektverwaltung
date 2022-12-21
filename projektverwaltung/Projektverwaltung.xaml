@@ -3,8 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Projektverwaltung" Height="505" Width="655">
     <Grid>
-        <TreeView HorizontalAlignment="Left" Height="370" Margin="10,10,0,0" VerticalAlignment="Top" Width="300"/>
-        <Button Content="Neue Projektmappe" HorizontalAlignment="Left" Margin="10,385,0,0" VerticalAlignment="Top" Width="143" Height="30" Click="Button_Click"/>
+        <TreeView x:Name="tree" HorizontalAlignment="Left" Height="370" Margin="10,10,0,0" VerticalAlignment="Top" Width="300">
+            <TreeViewItem Header="Projektverwaltung"/>
+        </TreeView>
+        <Button x:Name="newFolder" Content="Neue Projektmappe" HorizontalAlignment="Left" Margin="10,385,0,0" VerticalAlignment="Top" Width="143" Height="30" Click="newFolder_Click"/>
         <Button Content="Neues Projekt" HorizontalAlignment="Left" Margin="168,385,0,0" VerticalAlignment="Top" Width="143" Height="30"/>
         <Button Content="Löschen" HorizontalAlignment="Left" Margin="89,429,0,0" VerticalAlignment="Top" Width="143" Height="30"/>
         <Label Content="Titel" HorizontalAlignment="Left" Margin="315,10,0,0" VerticalAlignment="Top"/>
