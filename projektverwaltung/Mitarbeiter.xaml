@@ -20,7 +20,7 @@
         <TextBox x:Name="telefon" HorizontalAlignment="Left" Height="23" Margin="569,17,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" Margin="569,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="569,114,0,0" VerticalAlignment="Top" Width="120"/>
-        <DataGrid x:Name="grid" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="258" Width="247" ItemsSource="{Binding}" CanUserReorderColumns="False" CanUserResizeColumns="False" SelectionChanged="grid_SelectionChanged" EnableColumnVirtualization="True" IsReadOnly="True"/>
+        <DataGrid x:Name="grid" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="258" Width="247" ItemsSource="{Binding}" CanUserReorderColumns="False" CanUserResizeColumns="False" SelectionChanged="grid_SelectionChanged" EnableColumnVirtualization="True" IsReadOnly="True" HeadersVisibility="Column" MinColumnWidth="122"/>
         <Button x:Name="add" Content="Hinzufügen" HorizontalAlignment="Left" Margin="614,248,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button x:Name="delete" Content="Löschen" HorizontalAlignment="Left" Margin="262,248,0,0" VerticalAlignment="Top" Width="75" Click="delete_Click" IsEnabled="False"/>
         <Button x:Name="update" Content="Update" HorizontalAlignment="Left" Margin="437,248,0,0" VerticalAlignment="Top" Width="75" Click="update_Click" IsEnabled="False"/>
